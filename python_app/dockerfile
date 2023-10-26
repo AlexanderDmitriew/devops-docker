@@ -1,5 +1,4 @@
 FROM python:3.9-alpine as base
-FROM base
 RUN  pip install --no-cache-dir Flask configparser psycopg2-binary
 WORKDIR /srv/app
 COPY web.py /srv/app
